@@ -93,13 +93,13 @@ public:
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "Mupen GUI", 0));
         actionOpen->setText(QApplication::translate("MainWindow", "Open Rom", 0));
+        actionOpen->setShortcut(QApplication::translate("MainWindow", "Ctrl+O", 0));
         actionClose->setText(QApplication::translate("MainWindow", "Quit", 0));
         actionClose->setShortcut(QApplication::translate("MainWindow", "Ctrl+Q", 0));
         actionOpenT->setText(QApplication::translate("MainWindow", "Open", 0));
 #ifndef QT_NO_TOOLTIP
         actionOpenT->setToolTip(QApplication::translate("MainWindow", "Open Rom", 0));
 #endif // QT_NO_TOOLTIP
-        actionOpenT->setShortcut(QApplication::translate("MainWindow", "Ctrl+O", 0));
         actionPreferences->setText(QApplication::translate("MainWindow", "Preferences", 0));
         actionPreferences->setShortcut(QApplication::translate("MainWindow", "Ctrl+P", 0));
         actionPreferencesT->setText(QApplication::translate("MainWindow", "Preferences", 0));
