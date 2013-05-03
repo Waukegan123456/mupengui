@@ -6,3 +6,4 @@ tar -czf mupengui_0.1.orig.tar.gz mupengui-0.1
 mv debian mupengui-0.1
 cd mupengui-0.1
 debuild
+# debuild -kYOURKEY
