@@ -10,6 +10,8 @@ Download
 ========
 https://github.com/xpressrazor/mupengui/blob/master/mupengui_0.1-1_amd64.deb
 
+Use View Raw link
+
 Instructions
 ============
 Read BUILD.txt for build instructions.
