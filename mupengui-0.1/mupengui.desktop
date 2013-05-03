@@ -1,0 +1,11 @@
+
+[Desktop Entry]
+Name=Mupen GUI
+Comment=Play Nintendo 64 ROM files
+Exec=mupengui %U
+Terminal=false
+Type=Application
+StartupNotify=true
+Icon=mupengui
+Categories=GNOME;GTK;Game;
+MimeType=application/x-n64-rom;

@@ -1,0 +1,13 @@
+Source: mupengui
+Section: games
+Priority: extra
+Maintainer: Xpress Razor <xpressrazor@gmail.com>
+Build-Depends: debhelper (>= 8.0.0), cmake, qtbase5-dev, cdbs
+Standards-Version: 3.9.4
+Homepage: http://xpressrazor.wordpress.com
+
+Package: mupengui
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, mupen64plus-ui-console 
+Description: Mupen64plus GUI
+ Simple mupen64plus GUI to launch z64 (nintendo 64 games)
