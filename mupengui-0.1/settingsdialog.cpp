@@ -29,6 +29,8 @@ SettingsDialog::SettingsDialog(QWidget *parent) :
 
     //WINDOWED_FULLSCREEN = "WINDOWED";
 
+     WINDOWED_FULLSCREEN = "WINDOWED";
+
     if (MySettings.value(WINDOWED_FULLSCREEN).toString() == "WINDOWED") {
         ui->radioWindowed->setChecked(true);
     } else if (MySettings.value(WINDOWED_FULLSCREEN).toString() == "FULLSCREEN") {

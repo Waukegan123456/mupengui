@@ -43,7 +43,7 @@ public slots:
 private:
     Ui::SettingsDialog *ui;
     QSettings MySettings;
-    QString WINDOWED_FULLSCREEN = "WINDOWED";
+    QString WINDOWED_FULLSCREEN;
 };
 
 #endif // SETTINGSDIALOG_H
