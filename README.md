@@ -5,3 +5,11 @@ Simple GUI to launch mupen64plus (Nintendo 64) games. It is a basic launcher, th
 License
 =======
 GNU GENERAL PUBLIC LICENSE Version 3
+
+Download
+========
+https://github.com/xpressrazor/mupengui/blob/master/mupengui_0.1-1_amd64.deb
+
+Instructions
+============
+Read BUILD.txt for build instructions.
