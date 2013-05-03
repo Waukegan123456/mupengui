@@ -1,0 +1,24 @@
+1. Get qt development package.
+
+To build on ubuntu install qt using http://developer.ubuntu.com/get-started/gomobile/
+
+2. Build
+
+$ cd mupengui-0.1/
+$ mkdir build
+$ cd build/
+$ cmake ..
+$ make
+
+3. Development
+
+Use qt creator to open mupengui.pro file and write code. If you add visual elements copy *.h and *.cpp from your build directory to  mupengui-0.1/ directory and add the corresponding .cpp file to CMakeLists.txt
+
+4. About qmake in mupengui-0.1 directory
+You could easily build the project from command line using "qmake ." and make in mupengui-0.1 directory, but I recommend against it. If you however do that, don't run make clean, because it removes ui design files (our corresponding files *.cpp and *.h) from above. If you run "make clean" make sure you copy those files back.
+
+5. Building for debian
+If you run build.sh or install.sh it will build corresponding deb file. Make sure to set DEBFULLNAME and DEBEMAIL environment variables. If key error occurs, it does not affect the build.
+
+
+Cheers!!
