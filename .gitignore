@@ -4,3 +4,5 @@ mupengui_0.1-1.diff.gz
 mupengui_0.1-1.dsc
 mupengui_0.1-1_amd64.build
 mupengui_0.1-1_amd64.changes
+mupengui_0.1-1_amd64.ppa.upload
+cleanup.sh
