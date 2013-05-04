@@ -19,6 +19,8 @@
 #ifndef SETTINGSDIALOG_H
 #define SETTINGSDIALOG_H
 
+#define WINDOWED_FULLSCREEN "WINDOWED"
+
 #include <QDialog>
 #include <QTextStream>
 #include <QSettings>
@@ -36,14 +38,11 @@ public:
     ~SettingsDialog();
 
 public slots:
-    //void on_radioWindowedFullscreen_toggled();
     void accept();
-
     
 private:
     Ui::SettingsDialog *ui;
-    QSettings MySettings;
-    QString WINDOWED_FULLSCREEN;
+    QSettings mySettings;
 };
 
 #endif // SETTINGSDIALOG_H

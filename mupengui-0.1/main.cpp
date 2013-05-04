@@ -21,27 +21,21 @@
 #include <qstring.h>
 #include <qtextstream.h>
 
-
-
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     MainWindow w;
     QTextStream out(stdout);
 
-
     if (argc == 2) {
         QString fileName(argv[1]);
         w.runFile(&fileName, true);
         out << "Press (Ctrl + C) to quit\n";
-
-        // Could not execute waitForFinished, therefore need to show
-        //w.show();
     } else if (argc > 2) {
         out << "Usage: mupengui <filename>\n";
         exit(1);
-    } else {       
-        w.show();        
+    } else {
+        w.show();
     }
 
     return a.exec();

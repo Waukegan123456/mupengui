@@ -24,21 +24,14 @@ SettingsDialog::SettingsDialog(QWidget *parent) :
     ui(new Ui::SettingsDialog)
 {
     ui->setupUi(this);
-    //connect(ui->radioWindowed, SIGNAL(toggled(bool)), this, SLOT(on_radioWindowedFullscreen_toggled()));
-    //connect(ui->radioFullscreen, SIGNAL(toggled(bool)), this, SLOT(on_radioWindowedFullscreen_toggled()));
 
-    //WINDOWED_FULLSCREEN = "WINDOWED";
-
-     WINDOWED_FULLSCREEN = "WINDOWED";
-
-    if (MySettings.value(WINDOWED_FULLSCREEN).toString() == "WINDOWED") {
+    if (mySettings.value(WINDOWED_FULLSCREEN).toString() == "WINDOWED") {
         ui->radioWindowed->setChecked(true);
-    } else if (MySettings.value(WINDOWED_FULLSCREEN).toString() == "FULLSCREEN") {
+    } else if (mySettings.value(WINDOWED_FULLSCREEN).toString() == "FULLSCREEN") {
         ui->radioFullscreen->setChecked(true);
     }
 
     this->setFixedSize(404, 266);
-
 }
 
 SettingsDialog::~SettingsDialog()
@@ -46,27 +39,12 @@ SettingsDialog::~SettingsDialog()
     delete ui;
 }
 
-/*
-void SettingsDialog::on_radioWindowedFullscreen_toggled()
-{
-    //QTextStream out(stdout);
-    //out << "Settings: " << MySettings.value(WINDOWED_FULLSCREEN).toString();
-
-
-
-
-}
-*/
-
 void SettingsDialog::accept()
 {
-    //QTextStream out(stdout);
-    //out << "Accept " << "ACCEPTED";
-
     if (ui->radioFullscreen->isChecked()) {
-        MySettings.setValue(WINDOWED_FULLSCREEN, "FULLSCREEN");
+        mySettings.setValue(WINDOWED_FULLSCREEN, "FULLSCREEN");
     } else if (ui->radioWindowed->isChecked()) {
-        MySettings.setValue(WINDOWED_FULLSCREEN, "WINDOWED");
+        mySettings.setValue(WINDOWED_FULLSCREEN, "WINDOWED");
     }
 
     this->close();

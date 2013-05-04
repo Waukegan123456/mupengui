@@ -19,7 +19,10 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+#define DEFAULT_DIR_KEY "~"
+
 #include <QMainWindow>
+#include <QSettings>
 
 namespace Ui {
 class MainWindow;
@@ -40,6 +43,7 @@ public slots:
     
 private:
     Ui::MainWindow *ui;
+    QSettings mySettings;
 };
 
 #endif // MAINWINDOW_H
